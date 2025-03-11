@@ -1,0 +1,73 @@
+body {
+   background-color: lightblue;
+   font-family: Arial, sans-serif;
+   font-size: 16px;
+   color: black;
+   line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: "Georgia", serif;
+   color: darkblue;
+   text-align: center;
+}
+
+a {
+   color: blue;
+   text-decoration: none;
+}
+a:hover {
+	color: indigo !important;
+	text-decoration: underline;
+}
+
+ul {
+   padding: 10px;
+}
+ol {
+   list-style-type: upper-roman;
+   padding: 10px;
+}
+dl {
+   background-color: #f8f9fa;
+   padding: 10px;
+   border-left: 5px solid darkblue;
+}
+dt {
+   font-weight: bold;
+   color: darkblue;
+}
+dd {
+   margin-left: 20px;
+   font-style: italic;
+}
+
+table {
+   width: 80%;
+   margin: 20px auto;
+   border-collapse: collapse;
+   
+}
+#popular {
+	background-color: white;
+}
+th, td {
+   border: 1px solid black;
+   padding: 10px;
+   text-align: center;
+}
+#popular th {
+   background-color: blue;
+   color: white;
+}
+#popular tr:nth-child(even) {
+   background-color: #f2f2f2;
+}
+
+.nav {
+	margin-left: 100px;
+}
+.text {
+	color: navy;
+	font-size: 18px;
+}
