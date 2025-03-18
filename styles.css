@@ -71,3 +71,20 @@ th, td {
 	color: navy;
 	font-size: 18px;
 }
+
+.nav a {
+	font-weight: bold;
+	color: darkblue;
+}
+.nav > li {
+	list-style-type: square;
+	margin-bottom: 5px;
+}
+h2 + p {
+	font-size: 20px;
+	font-style: italic;
+	color: darkgreen;
+}
+dl > dt {
+   text-transform: uppercase;
+}
