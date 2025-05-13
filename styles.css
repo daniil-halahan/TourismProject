@@ -4,6 +4,7 @@ body {
    font-size: 16px;
    color: black;
    line-height: 1.5;
+	margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -12,14 +13,6 @@ h1, h2, h3, h4, h5, h6 {
    text-align: center;
 }
 
-a {
-   color: blue;
-   text-decoration: none;
-}
-a:hover {
-	color: indigo !important;
-	text-decoration: underline;
-}
 
 ul {
    padding: 10px;
@@ -46,7 +39,6 @@ table {
    width: 80%;
    margin: 20px auto;
    border-collapse: collapse;
-   
 }
 #popular {
 	background-color: white;
@@ -65,7 +57,7 @@ th, td {
 }
 
 .nav {
-	margin-left: 100px;
+	padding-left: 100px;
 }
 .text {
 	color: navy;
@@ -74,9 +66,8 @@ th, td {
 
 .nav a {
 	font-weight: bold;
-	color: darkblue;
 }
-.nav > li {
+.nav > ul > li {
 	list-style-type: square;
 	margin-bottom: 5px;
 }
@@ -87,4 +78,47 @@ h2 + p {
 }
 dl > dt {
    text-transform: uppercase;
+}
+
+a:hover {
+	color: indigo !important;
+	text-decoration: underline;
+}
+a:link {
+	color: navy;
+	text-decoration: none;
+}
+a:visited {
+	color: green;
+}
+a:hover {
+	color: indigo;
+	text-decoration: underline;
+}
+a:active {
+	color: red;
+}
+.nav li:first-child {
+	font-size: 18px;
+}
+
+h1::before {
+	content: "🌍 ";
+}
+h1::after {
+	content: " ✈️";
+}
+
+.nav {
+	background-color: aquamarine;
+	position: sticky;
+	top: 0;
+	overflow: hidden;
+}
+.additional {
+	float: right;
+	padding: 0 10px;
+}
+.highlight {
+	font-weight: bold;
 }
