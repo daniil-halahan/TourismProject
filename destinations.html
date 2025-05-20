@@ -6,6 +6,7 @@
 	<meta name="author" content="Daniil Halahan">
 	<title>Популярні туристичні напрямки</title>
 	<link rel="stylesheet" href="styles.css">
+	<script src="scripts.js"></script>
 </head>
 <body>
 	<div class="nav">
@@ -24,6 +25,18 @@
 			<li>Італія</li>
 			<li>Іспанія</li>
 		</ol>
+		<div id="dialog">
+			<button onclick="dialogWithUser()">Вікторина</button>
+		</div>
+		<div id="compare">
+			<input type="text" id="str1" placeholder="Введіть перший рядок">
+			<input type="text" id="str2" placeholder="Введіть другий рядок">
+			<button onclick="compareFromInputs()">Порівняти</button>
+		</div>
+		<div id="redirect">
+			<span>Натисніть, і за 5 секунд вас буде перенаправлено на корисний туристичний сайт:</span>
+			<button onclick="redirectToTouristSite()">Корисний туристичний сайт</button>
+		</div>
 		<table id="popular">
 			<caption><b>Популярні туристичні країни</b></caption>
 			<tr>

@@ -11,6 +11,8 @@
 			color: black;
 		}
 	</style>
+	
+	<script src="scripts.js"></script>
 </head>
 <body>
 	<div class="nav">
@@ -29,6 +31,22 @@
 		<p style="color: green; font-size: 18px; font-style: italic;">Подорожі <span class="highlight">допомагають</span> розширити світогляд, знайти нових друзів і відчути нові емоції.</p>
 		<h2 id="about">Про нас</h2>
 		<p class="text">Наш сайт створений для того, щоб <span class="highlight">допомогти</span> мандрівникам зробити їхні подорожі незабутніми!</p>
+		<button onclick="developerInfo('Галаган', 'Даніїл')">Інформація про розробника</button>
+		<button onclick="openTestWrite()">Вікно з тестовим параграфом</button>
 	</div>
+	<script>
+		setTimeout(() => {
+			alert("Вітаємо на сайті про туризм!");
+			const name = prompt("Як вас звати?");
+			if (name) {
+					const confirmed = confirm(`Привіт, ${name}! Хочете дізнатись більше про подорожі?`);
+				if (confirmed) {
+					alert("Дякуємо за інтерес!");
+				} else {
+					alert("Можливо, передумаєте згодом!");
+				}
+			}
+		}, 300);
+	</script>
 </body>
 </html>

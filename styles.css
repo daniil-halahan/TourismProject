@@ -98,6 +98,7 @@ a:hover {
 a:active {
 	color: red;
 }
+
 .nav li:first-child {
 	font-size: 18px;
 }
